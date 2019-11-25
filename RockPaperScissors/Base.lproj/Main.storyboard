@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rock Paper Scissors-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xue-rN-QOz">
+                                <rect key="frame" x="140" y="409" width="134" height="78"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xue-rN-QOz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="97f-hK-t5H"/>
+                            <constraint firstItem="xue-rN-QOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="auz-KQ-KOy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rock Paper Scissors" id="LkH-ej-9z3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="73.660714285714278"/>
+        </scene>
+        <!--What will you choose?-->
+        <scene sceneID="Lew-Ip-PaQ">
+            <objects>
+                <viewController id="fRM-Pt-ZZX" customClass="GameViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ygr-Le-tEt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TJ-CI-tgQ">
+                                <rect key="frame" x="166.5" y="393.5" width="81" height="109"/>
+                                <state key="normal" image="paper"/>
+                                <state key="highlighted" image="paper-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVj-5U-h2E">
+                                <rect key="frame" x="166.5" y="230.5" width="81" height="103"/>
+                                <state key="normal" image="rock"/>
+                                <state key="highlighted" image="rock-highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfd-MU-P1p">
+                                <rect key="frame" x="160" y="562.5" width="94" height="115"/>
+                                <state key="normal" image="scissors"/>
+                                <state key="highlighted" image="scissors-highlighted"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2TJ-CI-tgQ" firstAttribute="centerY" secondItem="ygr-Le-tEt" secondAttribute="centerY" id="1yL-JG-bAw"/>
+                            <constraint firstItem="Wfd-MU-P1p" firstAttribute="top" secondItem="2TJ-CI-tgQ" secondAttribute="bottom" constant="60" id="DdI-Bf-wW9"/>
+                            <constraint firstItem="2TJ-CI-tgQ" firstAttribute="centerX" secondItem="ygr-Le-tEt" secondAttribute="centerX" id="OyI-hd-xIC"/>
+                            <constraint firstItem="2TJ-CI-tgQ" firstAttribute="top" secondItem="jVj-5U-h2E" secondAttribute="bottom" constant="60" id="dJn-GI-jzE"/>
+                            <constraint firstItem="jVj-5U-h2E" firstAttribute="centerX" secondItem="ygr-Le-tEt" secondAttribute="centerX" id="ddM-mZ-Gt4"/>
+                            <constraint firstItem="Wfd-MU-P1p" firstAttribute="centerX" secondItem="ygr-Le-tEt" secondAttribute="centerX" id="fRK-Hb-nDA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ajU-1B-xdq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="What will you choose?" id="UvS-8g-fHi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoX-hU-V4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="73.660714285714278"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="eYg-O5-4Km">
+            <objects>
+                <viewController id="RKm-yh-SyI" customClass="ResultsViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rtb-5p-Yxm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="KUJ-QF-uTV">
+                                <rect key="frame" x="157" y="254" width="100" height="100.00000000000003"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KUJ-QF-uTV" secondAttribute="height" multiplier="1:1" id="2vR-pr-Y6J"/>
+                                    <constraint firstAttribute="width" constant="100" id="TKl-AK-oOu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-1F-rlE">
+                                <rect key="frame" x="186" y="627" width="42" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="End">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You win" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wm-5d-eOf">
+                                <rect key="frame" x="165" y="434" width="84" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex8-20-yk3">
+                                <rect key="frame" x="140.5" y="542" width="133" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ex8-20-yk3" firstAttribute="top" secondItem="5Wm-5d-eOf" secondAttribute="bottom" constant="80" id="5xD-Jj-amS"/>
+                            <constraint firstItem="5Wm-5d-eOf" firstAttribute="top" secondItem="KUJ-QF-uTV" secondAttribute="bottom" constant="80" id="IcG-r0-28j"/>
+                            <constraint firstItem="ex8-20-yk3" firstAttribute="centerX" secondItem="Rtb-5p-Yxm" secondAttribute="centerX" id="TG9-5b-3KV"/>
+                            <constraint firstItem="5Wm-5d-eOf" firstAttribute="centerX" secondItem="Rtb-5p-Yxm" secondAttribute="centerX" id="TKm-Co-IYl"/>
+                            <constraint firstItem="mmL-1F-rlE" firstAttribute="centerX" secondItem="Rtb-5p-Yxm" secondAttribute="centerX" id="TmE-SS-Kms"/>
+                            <constraint firstItem="mmL-1F-rlE" firstAttribute="top" secondItem="ex8-20-yk3" secondAttribute="bottom" constant="40" id="VPm-vl-mby"/>
+                            <constraint firstItem="5Wm-5d-eOf" firstAttribute="centerY" secondItem="Rtb-5p-Yxm" secondAttribute="centerY" id="kHu-9Y-dbd"/>
+                            <constraint firstItem="KUJ-QF-uTV" firstAttribute="centerX" secondItem="Rtb-5p-Yxm" secondAttribute="centerX" id="xtR-44-RWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="edd-PC-Bes"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultImage" destination="KUJ-QF-uTV" id="wgJ-XX-bzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qL-Ah-etQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2602.898550724638" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="81" height="109"/>
+        <image name="paper-highlighted" width="81" height="109"/>
+        <image name="rock" width="81" height="103"/>
+        <image name="rock-highlighted" width="81" height="103"/>
+        <image name="scissors" width="94" height="115"/>
+        <image name="scissors-highlighted" width="94" height="115"/>
+    </resources>
+</document>
