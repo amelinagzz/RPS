@@ -18,4 +18,6 @@ TODO:
 5. Do an unwind segue that will get to the second VC when the user taps "Play Again"
 6. Complete the game logic to show the use if they won, lost or was a tie.
 
+Gameplay
 
+![gameplay](gameplay.gif)
